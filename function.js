@@ -2,7 +2,7 @@ async function fetchPrice() {
 const inputBox = document.getElementById("crypto_name")
 
 
-	var data = await fetch('https://api.coincap.io/v2/assets/' + inputBox.value)
+	var data = await fetch('https://api.coincap.io/v2/assets/' + inputBox.value.toLowerCase())
   data = await data.json()
   console.log(data)
   data = data.data
