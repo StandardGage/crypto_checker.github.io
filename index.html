@@ -10,12 +10,16 @@ Crypto Price Checker
 <link href="main.css" rel="stylesheet"/>
  <script src="function.js"></script>
  <script src="https://anvil.works/embed.js" async></script>
- <iframe style="width:60%;" data-anvil-embed src="https://N6ZCDZUH2BNRYFFL.anvil.app/IW5TC377DXF33KP6YM3XTMYP"></iframe>
+ <iframe id = "feedback" style="height:50%;width:50%;display:none;" data-anvil-embed src="https://N6ZCDZUH2BNRYFFL.anvil.app/IW5TC377DXF33KP6YM3XTMYP"></iframe>
 
 <input type="text" id="crypto_name"/>
 
 <button id="check_price" onclick = "fetchPrice()">
 Check Price
+</button>
+
+<button id="open_feedback" style="bottom:0;right:0;" onclick = "openFeedback()">
+Feedback
 </button>
 
 <h1 id="name">
