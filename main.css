@@ -20,3 +20,9 @@ body {
 #check_price {
   margin-top: 10px;
 }
+
+#open_feedback {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
