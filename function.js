@@ -16,4 +16,16 @@ const inputBox = document.getElementById("crypto_name")
   coinPrice.innerHTML = 'Curent Price: $' + data.priceUsd
   
   console.log(data)
+  document.getElementById("feedback").style.display = "none"
+}
+
+async function openFeedback() {
+display = document.getElementById("feedback").style.display
+console.log(display)
+if (display == "none"){
+	document.getElementById("feedback").style.display = ""
+  }
+else{
+	document.getElementById("feedback").style.display = "none"
+}
 }
