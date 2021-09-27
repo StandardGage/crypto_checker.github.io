@@ -24,8 +24,10 @@ display = document.getElementById("feedback").style.display
 console.log(display)
 if (display == "none"){
 	document.getElementById("feedback").style.display = ""
+	document.getElementById("open_feedback").innerHTML = "Close"
   }
 else{
 	document.getElementById("feedback").style.display = "none"
+	document.getElementById("open_feedback").innerHTML = "Send Feedback"
 }
 }
